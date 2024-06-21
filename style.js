@@ -1,13 +1,13 @@
-const taskInput = document.getElementById('task');
-const addBtn = document.getElementById('add');
-const tasksList = document.getElementById('tasks');
+const input = document.getElementById('listinput');
+const button = document.getElementById('btn');
+const list1 =document.getElementById('contant');
 
-addBtn.addEventListener('click', addTask);
+button.addEventListener('click',textinfo);
 
-function addTask() {
-  const task = taskInput.value;
-  const taskListItem = document.createElement('li');
-  taskListItem.textContent = task;
-  tasksList.appendChild(taskListItem);
-  taskInput.value = '';
+function textinfo(){
+  const textinput = input.value;
+  const create = document.createElement('li');
+  create.textContent=textinput;
+  list1.appendChild(create);
+  textinput.value='';
 }
